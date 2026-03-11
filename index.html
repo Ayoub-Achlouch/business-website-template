@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title><!-- COMPANY_NAME --> | Professional Local Services</title>
+  <meta name="description" content="<!-- COMPANY_TAGLINE --> — Serving <!-- CITY --> with excellence since <!-- YEAR -->.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       CONFIGURATION — Edit these CSS variables in style.css
+       ============================================================ -->
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="logo">
+        <!-- Replace with <img src="images/logo.svg" alt="Logo"> if you have one -->
+        <span class="logo-mark">★</span>
+        <span class="logo-text">Apex<strong>Pro</strong></span>
+        <!-- ↑ CHANGE: Replace "ApexPro" with your company name -->
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#why-us">Why Us</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#contact" class="nav-cta">Get a Quote</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="home">
+    <!-- CHANGE: Replace with your background image -->
+    <div class="hero-bg">
+      <div class="hero-overlay"></div>
+      <!-- Decorative animated shapes -->
+      <div class="hero-shape s1"></div>
+      <div class="hero-shape s2"></div>
+      <div class="hero-shape s3"></div>
+    </div>
+    <div class="hero-content container">
+      <div class="hero-badge reveal-up" data-delay="0">
+        <span class="badge-dot"></span>
+        <!-- CHANGE: Your city/service area -->
+        Serving Dallas &amp; Surrounding Areas
+      </div>
+      <h1 class="hero-headline reveal-up" data-delay="100">
+        <!-- CHANGE: Your main headline -->
+        We Make Your
+        <em>Home Perfect</em>
+      </h1>
+      <p class="hero-sub reveal-up" data-delay="200">
+        <!-- CHANGE: Your subheadline -->
+        Professional home services delivered with precision, care, and a satisfaction guarantee. Trusted by over 2,000 families across the metroplex.
+      </p>
+      <div class="hero-actions reveal-up" data-delay="300">
+        <a href="#contact" class="btn btn-primary">
+          <span>Get Free Quote</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="tel:+12145550100" class="btn btn-ghost">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.22 2.18 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l1.28-1.28a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          <!-- CHANGE: Your phone number -->
+          (214) 555-0100
+        </a>
+      </div>
+      <div class="hero-trust reveal-up" data-delay="400">
+        <div class="trust-item">
+          <strong>★★★★★</strong>
+          <span>4.9/5 Rating</span>
+        </div>
+        <div class="trust-divider"></div>
+        <div class="trust-item">
+          <strong>2,400+</strong>
+          <span>Happy Clients</span>
+        </div>
+        <div class="trust-divider"></div>
+        <div class="trust-item">
+          <strong>15 Yrs</strong>
+          <span>Experience</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===================== SERVICES ===================== -->
+  <section class="services section-pad" id="services">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-label">What We Do</span>
+        <h2 class="section-title">Our <em>Services</em></h2>
+        <p class="section-sub">
+          <!-- CHANGE: Your services description -->
+          From routine maintenance to complete transformations — we bring expertise and craftsmanship to every job.
+        </p>
+      </div>
+      <div class="services-grid">
+
+        <!-- CHANGE: Edit each service card below -->
+        <div class="service-card reveal-up" data-delay="0">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <div class="card-number">01</div>
+          <h3>Interior Renovation</h3>
+          <p>Complete interior makeovers tailored to your style — flooring, painting, trim, and more. Impeccable results every time.</p>
+          <a href="#contact" class="card-link">
+            Learn More
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <div class="service-card reveal-up" data-delay="80">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div class="card-number">02</div>
+          <h3>Exterior Painting</h3>
+          <p>Premium weather-resistant coatings applied with professional techniques for a flawless, long-lasting finish.</p>
+          <a href="#contact" class="card-link">
+            Learn More
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <div class="service-card reveal-up" data-delay="160">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+          </div>
+          <div class="card-number">03</div>
+          <h3>Flooring Installation</h3>
+          <p>Hardwood, tile, LVP, and carpet installation by certified craftsmen. We prepare, install, and finish to perfection.</p>
+          <a href="#contact" class="card-link">
+            Learn More
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <div class="service-card reveal-up" data-delay="0">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+          </div>
+          <div class="card-number">04</div>
+          <h3>Kitchen Remodeling</h3>
+          <p>Transform your kitchen into a culinary haven. Cabinets, countertops, backsplash, and full gut renovations available.</p>
+          <a href="#contact" class="card-link">
+            Learn More
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <div class="service-card reveal-up" data-delay="80">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          </div>
+          <div class="card-number">05</div>
+          <h3>Plumbing &amp; Electrical</h3>
+          <p>Licensed plumbers and electricians on call for repairs, upgrades, and new installations. Safe, code-compliant work.</p>
+          <a href="#contact" class="card-link">
+            Learn More
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <div class="service-card reveal-up card-highlight" data-delay="160">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <div class="card-number">06</div>
+          <h3>Premium Packages</h3>
+          <p>Bundle multiple services for maximum savings. Our concierge packages handle everything from start to finish.</p>
+          <a href="#contact" class="card-link">
+            Get Package Deal
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="about section-pad" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual reveal-left">
+          <div class="about-img-wrap">
+            <!-- CHANGE: Replace with your team/work image -->
+            <div class="about-img-placeholder">
+              <svg viewBox="0 0 200 200" fill="none"><rect width="200" height="200" fill="#1a2340"/><path d="M40 160 C40 100 80 60 100 40 C120 60 160 100 160 160" stroke="#c9a84c" stroke-width="2" fill="none" opacity="0.4"/><circle cx="100" cy="75" r="25" stroke="#c9a84c" stroke-width="1.5" fill="none" opacity="0.6"/><rect x="55" y="120" width="90" height="50" rx="4" stroke="#c9a84c" stroke-width="1.5" fill="none" opacity="0.5"/><line x1="70" y1="120" x2="70" y2="170" stroke="#c9a84c" stroke-width="1" opacity="0.3"/><line x1="100" y1="120" x2="100" y2="170" stroke="#c9a84c" stroke-width="1" opacity="0.3"/><line x1="130" y1="120" x2="130" y2="170" stroke="#c9a84c" stroke-width="1" opacity="0.3"/></svg>
+              <span>Replace with your photo</span>
+            </div>
+            <img src="images/about.jpg" alt="Our team at work" class="about-img" onerror="this.style.display='none'">
+          </div>
+          <div class="about-badge-float glass">
+            <strong>15+</strong>
+            <span>Years of Excellence</span>
+          </div>
+        </div>
+        <div class="about-content reveal-right">
+          <span class="section-label">Our Story</span>
+          <h2 class="section-title">Built on Trust,<br><em>Driven by Quality</em></h2>
+          <p class="about-lead">
+            <!-- CHANGE: Your company story intro -->
+            ApexPro was founded with a single belief: every homeowner deserves exceptional work without compromise. What started as a two-person operation has grown into Dallas's most trusted home services company.
+          </p>
+          <p class="about-body">
+            <!-- CHANGE: Your company story body -->
+            We hire only the best craftsmen — licensed, insured, and background-checked — and back every project with our industry-leading guarantee. Our reputation is built one satisfied client at a time.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <div class="highlight-icon">✓</div>
+              <div>
+                <strong>Licensed &amp; Insured</strong>
+                <span>Full coverage for your peace of mind</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">✓</div>
+              <div>
+                <strong>100% Satisfaction Guarantee</strong>
+                <span>We don't stop until you're thrilled</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">✓</div>
+              <div>
+                <strong>Free On-Site Estimates</strong>
+                <span>Transparent pricing, no hidden fees</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">✓</div>
+              <div>
+                <strong>Award-Winning Team</strong>
+                <span>Best of Dallas 5 years running</span>
+              </div>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-primary">
+            Meet the Team
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== WHY CHOOSE US (STATS) ===================== -->
+  <section class="stats-section section-pad" id="why-us">
+    <div class="stats-bg-layer"></div>
+    <div class="container">
+      <div class="section-header reveal-up" style="color:#fff;">
+        <span class="section-label light">By the Numbers</span>
+        <h2 class="section-title" style="color:#fff;">Why Homeowners <em>Choose Us</em></h2>
+        <p class="section-sub" style="color:rgba(255,255,255,0.7);">
+          Numbers don't lie. Here's what 15 years of dedicated service looks like.
+        </p>
+      </div>
+      <div class="stats-grid">
+        <!-- CHANGE: Update these stats to match your business -->
+        <div class="stat-card glass reveal-up" data-delay="0">
+          <div class="stat-icon">🏠</div>
+          <div class="stat-number" data-target="2400">0</div>
+          <div class="stat-suffix">+</div>
+          <div class="stat-label">Projects Completed</div>
+        </div>
+        <div class="stat-card glass reveal-up" data-delay="100">
+          <div class="stat-icon">⭐</div>
+          <div class="stat-number" data-target="98">0</div>
+          <div class="stat-suffix">%</div>
+          <div class="stat-label">Client Satisfaction</div>
+        </div>
+        <div class="stat-card glass reveal-up" data-delay="200">
+          <div class="stat-icon">🏆</div>
+          <div class="stat-number" data-target="15">0</div>
+          <div class="stat-suffix">yrs</div>
+          <div class="stat-label">Years in Business</div>
+        </div>
+        <div class="stat-card glass reveal-up" data-delay="300">
+          <div class="stat-icon">👷</div>
+          <div class="stat-number" data-target="42">0</div>
+          <div class="stat-suffix">+</div>
+          <div class="stat-label">Expert Technicians</div>
+        </div>
+      </div>
+      <div class="why-features reveal-up">
+        <div class="why-feat">
+          <div class="feat-line"></div>
+          <h4>Same-Day Response</h4>
+          <p>We reply to every inquiry within 2 hours during business hours.</p>
+        </div>
+        <div class="why-feat">
+          <div class="feat-line"></div>
+          <h4>Flat-Rate Pricing</h4>
+          <p>Quote is your price — no surprises, no upsells on the job site.</p>
+        </div>
+        <div class="why-feat">
+          <div class="feat-line"></div>
+          <h4>5-Year Warranty</h4>
+          <p>We stand behind our work with an industry-leading 5-year warranty.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== GALLERY ===================== -->
+  <section class="gallery section-pad" id="gallery">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-label">Our Work</span>
+        <h2 class="section-title">Recent <em>Projects</em></h2>
+        <p class="section-sub">
+          Every project is a showcase of our craftsmanship. Browse our recent work below.
+        </p>
+      </div>
+      <div class="gallery-filter reveal-up">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="interior">Interior</button>
+        <button class="filter-btn" data-filter="exterior">Exterior</button>
+        <button class="filter-btn" data-filter="kitchen">Kitchen</button>
+      </div>
+      <div class="gallery-grid">
+        <!-- CHANGE: Replace placeholder divs with real images -->
+        <!-- Each item has data-cat for filtering -->
+        <div class="gallery-item gi-large reveal-up" data-cat="interior" data-delay="0">
+          <div class="gal-placeholder" style="background: linear-gradient(135deg,#1a2340,#2d3a6b)">
+            <img src="images/gallery-1.jpg" alt="Project 1" onerror="this.style.display='none'">
+            <span>Interior Renovation</span>
+          </div>
+          <div class="gal-overlay">
+            <h4>Living Room Makeover</h4>
+            <span>Interior · Dallas, TX</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal-up" data-cat="kitchen" data-delay="60">
+          <div class="gal-placeholder" style="background: linear-gradient(135deg,#2d1a40,#6b2d5e)">
+            <img src="images/gallery-2.jpg" alt="Project 2" onerror="this.style.display='none'">
+            <span>Kitchen Remodel</span>
+          </div>
+          <div class="gal-overlay">
+            <h4>Modern Kitchen</h4>
+            <span>Kitchen · Plano, TX</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal-up" data-cat="exterior" data-delay="120">
+          <div class="gal-placeholder" style="background: linear-gradient(135deg,#1a3330,#2d6b60)">
+            <img src="images/gallery-3.jpg" alt="Project 3" onerror="this.style.display='none'">
+            <span>Exterior Paint</span>
+          </div>
+          <div class="gal-overlay">
+            <h4>Full Exterior Repaint</h4>
+            <span>Exterior · Frisco, TX</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal-up" data-cat="interior" data-delay="60">
+          <div class="gal-placeholder" style="background: linear-gradient(135deg,#2d2a1a,#6b5e2d)">
+            <img src="images/gallery-4.jpg" alt="Project 4" onerror="this.style.display='none'">
+            <span>Flooring Install</span>
+          </div>
+          <div class="gal-overlay">
+            <h4>Hardwood Flooring</h4>
+            <span>Interior · McKinney, TX</span>
+          </div>
+        </div>
+        <div class="gallery-item gi-tall reveal-up" data-cat="kitchen" data-delay="120">
+          <div class="gal-placeholder" style="background: linear-gradient(135deg,#1a1a3a,#3a2d6b)">
+            <img src="images/gallery-5.jpg" alt="Project 5" onerror="this.style.display='none'">
+            <span>Kitchen Countertops</span>
+          </div>
+          <div class="gal-overlay">
+            <h4>Quartz Countertops</h4>
+            <span>Kitchen · Allen, TX</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal-up" data-cat="exterior" data-delay="180">
+          <div class="gal-placeholder" style="background: linear-gradient(135deg,#1a2a1a,#2d5a2d)">
+            <img src="images/gallery-6.jpg" alt="Project 6" onerror="this.style.display='none'">
+            <span>Deck Build</span>
+          </div>
+          <div class="gal-overlay">
+            <h4>Custom Cedar Deck</h4>
+            <span>Exterior · Garland, TX</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TESTIMONIALS ===================== -->
+  <section class="testimonials section-pad" id="testimonials">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-label">Client Reviews</span>
+        <h2 class="section-title">What Our <em>Clients Say</em></h2>
+        <p class="section-sub">
+          Don't take our word for it — hear from the homeowners who trusted us with their biggest investment.
+        </p>
+      </div>
+      <div class="testi-slider-wrap reveal-up">
+        <div class="testi-track" id="testiTrack">
+
+          <!-- CHANGE: Replace with real client testimonials -->
+          <div class="testi-slide">
+            <div class="testi-card glass">
+              <div class="testi-stars">★★★★★</div>
+              <blockquote>"ApexPro completely transformed our dated kitchen in just 8 days. The craftsmanship is outstanding and the team was respectful, clean, and professional throughout. We've already referred three neighbors."</blockquote>
+              <div class="testi-author">
+                <div class="testi-avatar">SJ</div>
+                <div>
+                  <strong>Sarah Johnson</strong>
+                  <span>Plano, TX · Kitchen Remodel</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-slide">
+            <div class="testi-card glass">
+              <div class="testi-stars">★★★★★</div>
+              <blockquote>"I've hired many contractors over the years and ApexPro stands apart. They showed up on time every day, communicated proactively, and delivered results that exceeded my expectations — at a fair price."</blockquote>
+              <div class="testi-author">
+                <div class="testi-avatar">MR</div>
+                <div>
+                  <strong>Michael Rodriguez</strong>
+                  <span>Dallas, TX · Full Renovation</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-slide">
+            <div class="testi-card glass">
+              <div class="testi-stars">★★★★★</div>
+              <blockquote>"The exterior paint job looks like a magazine photo. They pressure-washed, primed, caulked every gap, and applied two perfect coats. My house looks brand new. Worth every penny and then some."</blockquote>
+              <div class="testi-author">
+                <div class="testi-avatar">AT</div>
+                <div>
+                  <strong>Amanda Thompson</strong>
+                  <span>Frisco, TX · Exterior Painting</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-slide">
+            <div class="testi-card glass">
+              <div class="testi-stars">★★★★★</div>
+              <blockquote>"Called on a Tuesday, had an estimate by Wednesday, crew started Friday. The hardwood floors are absolutely gorgeous. My guests think we moved into a new home. Unbelievably fast and high quality."</blockquote>
+              <div class="testi-author">
+                <div class="testi-avatar">DK</div>
+                <div>
+                  <strong>David Kim</strong>
+                  <span>McKinney, TX · Flooring</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="testi-controls">
+          <button class="testi-btn" id="testiPrev" aria-label="Previous">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          </button>
+          <div class="testi-dots" id="testiDots"></div>
+          <button class="testi-btn" id="testiNext" aria-label="Next">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="contact section-pad" id="contact">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-label">Get in Touch</span>
+        <h2 class="section-title">Request a <em>Free Quote</em></h2>
+        <p class="section-sub">
+          Fill out the form and we'll get back to you within 2 hours with a no-obligation estimate.
+        </p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-form-wrap reveal-left">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fname" placeholder="John" required>
+              </div>
+              <div class="form-group">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname" placeholder="Smith" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="(214) 555-0000">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="service">Service Needed</label>
+              <select id="service" name="service">
+                <!-- CHANGE: Match your services -->
+                <option value="">Select a service...</option>
+                <option>Interior Renovation</option>
+                <option>Exterior Painting</option>
+                <option>Flooring Installation</option>
+                <option>Kitchen Remodeling</option>
+                <option>Plumbing &amp; Electrical</option>
+                <option>Premium Package</option>
+                <option>Other / Not Sure</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Project Details</label>
+              <textarea id="message" name="message" rows="4" placeholder="Tell us about your project, timeline, and any specific needs..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <span id="formBtnText">Send My Request</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+            </button>
+            <p class="form-note">🔒 Your information is 100% private. We never sell your data.</p>
+            <div class="form-success" id="formSuccess">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              Thank you! We'll be in touch within 2 hours.
+            </div>
+          </form>
+        </div>
+
+        <div class="contact-info-wrap reveal-right">
+          <div class="contact-map-wrap">
+            <!-- CHANGE: Replace with your Google Maps embed -->
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d429724.01954168484!2d-97.17172889282285!3d32.81983408878929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c19f77b45974b%3A0xb9ec9ba4f647678f!2sDallas%2C%20TX!5e0!3m2!1sen!2sus!4v1700000000000"
+              width="100%" height="260" style="border:0; border-radius: 12px;" allowfullscreen=""
+              loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              title="Our Service Area">
+            </iframe>
+          </div>
+          <div class="contact-details">
+            <div class="cdetail">
+              <div class="cdetail-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.22 2.18 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l1.28-1.28a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              </div>
+              <div>
+                <strong>Phone</strong>
+                <!-- CHANGE: Your phone number -->
+                <a href="tel:+12145550100">(214) 555-0100</a>
+              </div>
+            </div>
+            <div class="cdetail">
+              <div class="cdetail-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <strong>Email</strong>
+                <!-- CHANGE: Your email -->
+                <a href="mailto:hello@apexpro.com">hello@apexpro.com</a>
+              </div>
+            </div>
+            <div class="cdetail">
+              <div class="cdetail-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <strong>Service Area</strong>
+                <!-- CHANGE: Your service area -->
+                <span>Dallas &amp; Surrounding 50 Miles</span>
+              </div>
+            </div>
+          </div>
+          <div class="business-hours glass">
+            <h4>Business Hours</h4>
+            <!-- CHANGE: Your business hours -->
+            <div class="hours-grid">
+              <span>Monday – Friday</span><span>7:00 AM – 6:00 PM</span>
+              <span>Saturday</span><span>8:00 AM – 4:00 PM</span>
+              <span>Sunday</span><span>Emergency Only</span>
+            </div>
+            <div class="hours-badge">
+              <span class="open-dot"></span>
+              We're open now — call us!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="#" class="logo">
+              <span class="logo-mark">★</span>
+              <span class="logo-text">Apex<strong>Pro</strong></span>
+            </a>
+            <p>
+              <!-- CHANGE: Your footer tagline -->
+              Dallas's most trusted home services company. Quality work, fair prices, guaranteed satisfaction.
+            </p>
+            <div class="social-links">
+              <!-- CHANGE: Your social media URLs -->
+              <a href="#" aria-label="Facebook" class="social-btn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+              </a>
+              <a href="#" aria-label="Instagram" class="social-btn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </a>
+              <a href="#" aria-label="Google" class="social-btn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.545 10.239v3.821h5.445c-.712 2.315-2.647 3.972-5.445 3.972a6.033 6.033 0 110-12.064c1.498 0 2.866.549 3.921 1.453l2.814-2.814A9.969 9.969 0 0012.545 2C7.021 2 2.543 6.477 2.543 12s4.478 10 10.002 10c8.396 0 10.249-7.85 9.426-11.748l-9.426-.013z"/></svg>
+              </a>
+              <a href="#" aria-label="YouTube" class="social-btn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.97C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.97A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h5>Services</h5>
+            <ul>
+              <li><a href="#services">Interior Renovation</a></li>
+              <li><a href="#services">Exterior Painting</a></li>
+              <li><a href="#services">Flooring Installation</a></li>
+              <li><a href="#services">Kitchen Remodeling</a></li>
+              <li><a href="#services">Plumbing &amp; Electrical</a></li>
+              <li><a href="#services">Premium Packages</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Company</h5>
+            <ul>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#gallery">Our Work</a></li>
+              <li><a href="#testimonials">Reviews</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Contact</h5>
+            <ul class="footer-contact-list">
+              <!-- CHANGE: Your contact details -->
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.22 2.18 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l1.28-1.28a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                <a href="tel:+12145550100">(214) 555-0100</a>
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <a href="mailto:hello@apexpro.com">hello@apexpro.com</a>
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>Dallas, TX 75201</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>
+          <!-- CHANGE: Update year and company name -->
+          &copy; 2025 ApexPro Home Services. All rights reserved.
+        </p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
